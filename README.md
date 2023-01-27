@@ -1,6 +1,10 @@
 # Elktail
 
-## This is a fork of [knes1/elktail](https://github.com/knes1/elktail) with some fixes.
+This is a fork of [knes1/elktail](https://github.com/knes1/elktail) with some fixes.
+* go.mod
+* migration `github.com/codegangsta/cli` to `github.com/urfave/cli`
+* fix selectIndex when no index has been found.
+
 
 Elktail is a command line utility to query and tail ELK (elasticsearch, logstash, kibana) logs. Even though it's powerful, using Kibana's web interface to search and analyse the logs is not always practical. Sometimes you just wish to `tail -f` the logs that you normally view in kibana to see what's happening right now. Elktail allows you to do just that, and more. Tail the logs. Search for errors and specific events on commandline. Pipe the search results to any of the standard unix tools.  Use it in scripts. Redirect the output to a file to effectively download a log from es / kibana etc...
 
